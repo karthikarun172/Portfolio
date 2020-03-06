@@ -1,0 +1,7 @@
+ " I'm a FullStack Developer and UI Designer in India. And I'm
+                really passionate about interactive web-design and animations.I
+                also do data analysis with python as my strong background "
+
+
+        background-image: radial-gradient(#142d4c, black 1000px);
+          background-color: #e5dfdf;

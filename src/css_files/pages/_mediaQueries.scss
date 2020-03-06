@@ -1,0 +1,22 @@
+@mixin Responsive($breakPoint) {
+  @if $breakPoint == phone {
+    @media only screen and(max-width:600px) {
+      @content;
+    }
+  }
+  @if $breakPoint == tab_port {
+    @media only screen and(max-width:900px) {
+      @content;
+    }
+  }
+  @if $breakPoint == tab_land {
+    @media only screen and(max-width:1200px) {
+      @content;
+    }
+  }
+  @if $breakPoint == bigSrceen {
+    @media only screen and(max-width:1800px) {
+      @content;
+    }
+  }
+}

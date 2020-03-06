@@ -1,0 +1,114 @@
+@import "pages/_mediaQueries.scss";
+
+.about_section {
+  background-color: #e5dfdf;
+  position: relative;
+  @include Responsive(tab_land) {
+    flex-wrap: wrap;
+  }
+
+  .abt_txt {
+    width: 100%;
+    text-align: center;
+    font-family: "Montserrat";
+    padding-top: 90px;
+    font-size: 2rem;
+  }
+
+  .abt_left {
+    .abt_me {
+      display: flex;
+    }
+    background-image: radial-gradient(#142d4c, black 1000px);
+    width: 500px;
+    border-radius: 30px;
+    margin-left: 20%;
+    margin-top: 90px;
+    box-shadow: 12px 12px 22px gray;
+    padding: 30px;
+    .my_img {
+      height: 100px;
+      width: 90px;
+      padding: 10px;
+    }
+    p {
+      width: 400px;
+      font-family: "Monteserrat";
+      color: seashell;
+      word-spacing: 0.2rem;
+      letter-spacing: 0.1em;
+      line-height: 2rem;
+      padding: 10px;
+      @include Responsive(tab_port) {
+        width: 200px;
+      }
+    }
+    @include Responsive(tab_land) {
+      width: 80%;
+      display: inline-block;
+      margin-left: 30px;
+    }
+  }
+  .abt_left:hover {
+    transform: translateY(-15px);
+    box-shadow: 12px 12px 9px gray;
+    transition: 0.5s;
+  }
+  .abt_right {
+    width: 500px;
+    height: 830px;
+    margin-left: 60%;
+    margin-top: -13%;
+    @include Responsive(tab_land) {
+      width: 50%;
+      margin-left: 70px;
+      margin-top: 30px;
+    }
+    .skills_lists {
+      list-style: none;
+
+      display: flex;
+      flex-direction: column;
+
+      @include Responsive(tab_land) {
+        flex-wrap: wrap;
+        width: 200px;
+      }
+
+      .skill_list {
+        margin-bottom: 40px;
+        width: 300px;
+        background-image: radial-gradient(#142d4c, black 1000px);
+        padding: 10px 10px;
+        color: seashell;
+        font-family: "Montserrat";
+        border-radius: 0px 0px 100px 0px;
+        box-shadow: 12px 12px 22px gray;
+        @include Responsive(phone) {
+          width: 100px;
+        }
+      }
+      .skill_list:hover {
+        transform: translateX(15px);
+        box-shadow: 12px 12px 9px gray;
+        transition: 0.5s;
+        cursor: pointer;
+      }
+      .skill_list:nth-child(2n) {
+        width: 150px;
+      }
+      .skill_list:nth-child(5n) {
+        width: 200px;
+      }
+      .skill_list:nth-child(4) {
+        width: 300px;
+      }
+    }
+  }
+  .abilities {
+    display: flex;
+    padding-bottom: 400px;
+
+    flex-direction: row;
+  }
+}

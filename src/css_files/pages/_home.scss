@@ -1,0 +1,70 @@
+@import "pages/_mediaQueries";
+html {
+  box-sizing: border-box;
+  @include Responsive(tab_land) {
+    font-size: 56.25%rem;
+  }
+  @include Responsive(tab_port) {
+    font-size: 52%;
+  }
+  @include Responsive(phone) {
+    font-size: 43.75%;
+  }
+}
+
+.headers {
+  background-image: radial-gradient(#010038, black);
+  height: 100vh;
+  color: #f9f9f9;
+  position: relative;
+
+  .header_text {
+    @include Responsive(phone) {
+      font-size: 0.8rem;
+    }
+    @include Responsive(tab_port) {
+      font-size: 1rem;
+    }
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-family: "Montserrat";
+    font-size: 1.2rem;
+    text-align: center;
+    .title {
+      .name {
+        margin-left: 0.8rem;
+        color: #f0134d;
+      }
+    }
+  }
+  .btn {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .btn-main {
+      outline: none;
+      background-color: #fff;
+      color: #010038;
+      font-size: 1rem;
+      font-family: "PT Serif Caption";
+      padding: 10px 20px;
+      margin: 5px;
+      cursor: pointer;
+      border-radius: 40px;
+      transition: all 0.2s;
+    }
+  }
+  .btn-main:hover {
+    background-color: rgb(172, 1, 1);
+    color: whitesmoke;
+    box-shadow: 12px 18px 2px black;
+    text-shadow: 1px 1px 5px black;
+    font-family: "Montserrat";
+    border: 0;
+  }
+}
